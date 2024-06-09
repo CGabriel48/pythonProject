@@ -31,12 +31,4 @@ class Persona:
 persona1 = Persona("Carlos", "18", "hombre", "1.58", "3 de enero")
 persona2 = Persona("Jose", "25", "hombre", "1.65", "4 de junio")
 
-persona1.hoja_de_presentacion()
-persona1.cumplir_años()
-
-persona2.saludar()
-persona2.hoja_de_presentacion()
-persona2.cumplir_años()
-persona2.despedia()
-persona2.irse()
-
+def encuentro(persona1)
