@@ -1,4 +1,4 @@
-class Personaje:
+class sin_clase:
     def __init__(self, nombre, fuerza, inteligencia, defensa, vida):
         self.nombre = nombre
         self.fuerza = fuerza
@@ -18,6 +18,9 @@ class Personaje:
         self.defensa = self.defensa + defensa
         self.inteligencia = self.inteligencia + inteligencia
 
+    def saludo(self):
+        print("hola mucho gusto me llamo", self.nombre)
+
     def esta_vivo(selfs):
         return selfs.vida > 0
 
@@ -26,12 +29,10 @@ class Personaje:
         print(self.nombre, "ha muerto")
 
 
+class arquero(sin_clase):
 
-class arquero(Personaje):
-
-
-    def __init__(self, nombre, fuerza,inteligencia, defensa, vida, arco):
-        super().__init__(nombre, fuerza,inteligencia,defensa,vida)
+    def __init__(self, nombre, fuerza, inteligencia, defensa, vida, arco):
+        super().__init__(nombre, fuerza, inteligencia, defensa, vida)
         self.arco = arco
 
     def seleccione_un_arma(self):
@@ -40,7 +41,7 @@ class arquero(Personaje):
             self.arco = 2
         elif opcion == 2:
             self.arco = 3
-        elise:\
+        elise: \
             print("seleccione una de las opciones disponibles")
 
     def atributos(self):
@@ -48,20 +49,20 @@ class arquero(Personaje):
         print("arma", self.arco)
 
 
+class tanque(sin_clase):
+
+    def __init__(self, nombre, fuerza, inteligencia, defensa, vida, escudo):
+        super().__init__(nombre, fuerza, inteligencia, defensa, vida)
+        self.escudo = escudo
+
+    def atributos(self):
+        super().atributos()
+        print("arma", self.escudo)
 
 
+avatar_1 = tanque("Max", 5, 10, 25, 100, 0)
 
-class tanque(Personaje):
-  def __int__(self, nombre, fuerza, inteligencia, defensa, vida, escudo):
-      super().__int__(nombre, fuerza, inteligencia, defensa, vida)
-      self.escudo = escudo
+avatar_2 = arquero("Lilia", 5, 15, 5, 50, 0)
 
-  def atributos(self):
-    super().atributos()
-    print("escudo", self.escudo)
-
-
-Max = tanque("Max", 5, 10, 20, 150)
-Sin_clase = Personaje("Samus", 10, 10, 10, 100)
-Lilia = arquero("Lilia", 5, 15,5,50, 0)
-
+#este codigo fue hecho con el video del eva como base lastimosamente aqui de igual manero como el otro no pude
+#agregar el poliformismo mil disculpas
