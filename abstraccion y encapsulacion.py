@@ -1,5 +1,9 @@
-print("Hola bienbenido soy")
 
+#este codigo fue hecho en base al que nos enseño en clases con algunas acciones extras tuve
+#problemas con el poliformismo asi que no lo agrege mil dsiculpas las acciones
+
+
+print("Hola bienbenido soy")
 
 class Persona:
     def __init__(self, nombre, edad, genero, estatura, cumpleaños):
@@ -31,5 +35,4 @@ class Persona:
 persona_1 = Persona("Carlos", "18", "hombre", "1.58", "3 de enero")
 persona_2 = Persona("Jose", "25", "hombre", "1.65", "4 de junio")
 
-#este codigo fue hecho en base al que nos enseño en clases con algunas acciones extras tuve
-#problemas con el poliformismo asi que no lo agrege mil dsiculpas
+persona_2.irse()

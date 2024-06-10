@@ -1,3 +1,7 @@
+
+#este codigo fue hecho con el video del eva como base lastimosamente aqui de igual manero como el otro no pude
+#agregar el poliformismo mil disculpas
+
 class sin_clase:
     def __init__(self, nombre, fuerza, inteligencia, defensa, vida):
         self.nombre = nombre
@@ -64,5 +68,3 @@ avatar_1 = tanque("Max", 5, 10, 25, 100, 0)
 
 avatar_2 = arquero("Lilia", 5, 15, 5, 50, 0)
 
-#este codigo fue hecho con el video del eva como base lastimosamente aqui de igual manero como el otro no pude
-#agregar el poliformismo mil disculpas
