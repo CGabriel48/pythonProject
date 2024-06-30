@@ -59,6 +59,10 @@ def main():
             area = calcular_area_triangulo_equilatero(baset, alturat)
             print(f"El área del triangulo es: {area}")
 
+""" por si nota parecido el codigo del triangulo con el del rectangulo solo es copia y pega del de arriba ya que al ser
+este triangulo ipoteticamente equilatero no cambia mucho la manera de calcular el area con la del rectangulo """
+
+
     else:
         print("Error: Figura no reconocida. Por favor, ingrese 'rectángulo', 'círculo' o 'traingulo'.")
 
