@@ -7,11 +7,11 @@ class ToDoApp:
         self.root = root
         self.root.title("Lista de Tareas")
 
-        # Crear el marco principal
+        # marco principal
         self.frame = tk.Frame(root)
         self.frame.pack(pady=10)
 
-        # Campo de entrada para agregar nuevas tareas
+        # Campo de entrada para agregar una tarea
         self.task_entry = tk.Entry(self.frame, width=30)
         self.task_entry.grid(row=0, column=0, padx=10)
         self.task_entry.bind("<Return>", self.add_task)
@@ -20,7 +20,7 @@ class ToDoApp:
         self.add_button = tk.Button(self.frame, text="Añadir Tarea", width=15, command=self.add_task)
         self.add_button.grid(row=0, column=1, padx=10)
 
-        # Lista de tareas (Listbox)
+        # Lista de tareas
         self.task_listbox = tk.Listbox(self.frame, height=10, width=50, selectmode=tk.SINGLE)
         self.task_listbox.grid(row=1, column=0, columnspan=2, pady=10)
 
@@ -29,7 +29,7 @@ class ToDoApp:
                                          command=self.complete_task)
         self.complete_button.grid(row=2, column=0, padx=10, pady=5)
 
-        # Botón para eliminar tarea
+        # Botón para eliminar
         self.delete_button = tk.Button(self.frame, text="Eliminar Tarea", width=20, command=self.delete_task)
         self.delete_button.grid(row=2, column=1, padx=10, pady=5)
 
